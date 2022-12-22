@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opms</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/regular.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/solid.min.css">
+</head>
+<body>
+    <div id="app">
+        
+        <div class="header-responsive">
+            <label for="checkboxProfile" class="menu-left">
+                <!-- <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> -->
+                <img src="./assets/img/img.jpg" alt="NMH">
+
+            </label>
+            <label for="checkbox" class="icon-menu menu-right">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </label>      
+        </div> 
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+          </div>
+        <label for="menuProfile" class="menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </label>
+        <input type="checkbox" id="menuProfile" checked>
+        <input type="checkbox" id="checkbox" hidden checked>
+        <input type="checkbox" id="checkboxProfile" hidden checked>
+        <div id="header">
+            <ul class="navbar__left">
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Dashboard</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Tax Finalization</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Calendar</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Working Timesheet</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Appraisals</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Project</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Timesheets</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Employees</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Assets</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Helpdesk</span>
+                    </a> </li>
+                <li class="navbar__left--action">
+                    <a href="/">
+                        <span>Personal Info</span>
+                    </a> 
+                </li>
+                <li class="navbar__left--action menu_more">
+                    <a href="/">
+                        <span>More</span>
+                    </a> 
+                    <!-- <ul class="menu_more">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul> -->
+                </li>
+            </ul>
+            <div class="navbar__right">
+                <div class="navbar__right--icon time">
+                    <i class="fa-solid fa-timer"></i>
+                </div>
+                <div class="navbar__right--icon message">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="navbar__info">
+                    <img class="navbar__info--img" src="./assets/img/img.jpg" alt="img-user">
+                    <span class="navbar__info--name">Nguyễn Minh Hoàng</span>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="control__panel"></div>
+            <div class="content">
+                <div class="profile">
+                    <div class="profile__img">
+                        <img src="./assets/img/img.jpg" alt="NMH">
+                    </div>
+                    <div class="profile__name">
+                        <h2>Nguyễn Minh Hoàng</h2>
+                        <p class="text-light">Internship</p>
+                        <p class="text-light">Intern</p>
+                    </div>
+                    <div class="profile__details">
+                        <div class="profile__information">
+                            <div class="profile__information--gender">
+                                <p class="profile__information--icon">
+                                    <i class="fas fa-mars"></i>
+                                </p>
+                                <p class="profile__information--text">Nam</p>
+                            </div>
+                            <div class="profile__information--birtdays">
+                                <p class="profile__information--text">DOB</p>
+                                <p class="profile__information--query">--/--/----</p>
+                            </div>
+                        </div>
+                        <div class="profile__details--startwork">
+                            <p class="profile__details--text">Đã vào làm</p>
+                            <p class="profile__details--number">10 tháng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <marquee class="marquee" direction="left">Xin chào Nguyễn Minh Hoàng, chúc bạn có một
+                        ngày làm việc thật vui vẻ và hiệu quả !</marquee>
+                    <div class="information-job">
+                        <div class="timesheet">
+                            <div class="card approval">
+                                <div class="timesheet-title">CHỜ PHÊ DUYỆT</div>
+                                <button class="timesheet-btn">
+                                    <div class="text-btn">Xin nghỉ</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn">
+                                    <div class="text-btn">Đi muộn/Về sớm</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn">
+                                    <div class="text-btn">Xin WFH</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn">
+                                    <div class="text-btn">Chấm công WFH</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="timesheet">
+                            <div class=" card things">
+                                <div class="timesheet-title">VIỆC CẦN LÀM</div>
+                                <button class="timesheet-btn">
+                                    <div class="text-btn">Duyệt xin nghỉ</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn fit">
+                                    <div class="text-btn">Duyệt đi muộn/Về sớm</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn fit">
+                                    <div class="text-btn">Duyệt xin WFH</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn fit">
+                                    <div class="text-btn">Duyệt chấm công WFH</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                                <button class="timesheet-btn fit">
+                                    <div class="text-btn">Đánh giá hợp đồng</div>
+                                    <div class="number-btn">0</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="timesheet">
+                            <div class="card other small">
+                                <div class="timesheet-title">THÔNG TIN KHÁC</div>
+                                <button class="timesheet-btn small">
+                                    <div class="text-btn">Dự án</div>
+                                    <div class="number-btn"><i class="fas fa-chevron-right"></i></div>
+                                </button>
+                                <button class="timesheet-btn small">
+                                    <div class="text-btn">Làm thêm giờ</div>
+                                    <div class="number-btn"><i class="fas fa-chevron-right"></i></div>
+                                </button>
+                                <button class="timesheet-btn small">
+                                    <div class="text-btn">Chấm công làm thêm giờ</div>
+                                    <div class="number-btn"><i class="fas fa-chevron-right"></i></div>
+                                </button>
+                                <button class="timesheet-btn small">
+                                    <div class="text-btn">Timesheet gửi khách hàng</div>
+                                    <div class="number-btn"><i class="fas fa-chevron-right"></i></div>
+                                </button>
+                                <button class="timesheet-btn small">
+                                    <div class="text-btn">Xem phiếu lương</div>
+                                    <div class="number-btn"><i class="fas fa-chevron-right"></i></div>
+                                </button>
+                                <button class="timesheet-btn small">
+                                    <div class="text-btn">Ủy quyền quyết toán thuế</div>
+                                    <div class="number-btn"><i class="fas fa-chevron-right"></i></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="timesheet">
+                            <div class="notification">
+                                <div class="notification__head shared">ĐIỂM DANH</div>
+                                <div class="scroll-meet">
+                                    <table class="table-bordered">  
+                                        <tbody>
+                                            <tr>
+                                                <th class="title-attendance">Ngày</th>
+                                                <th class="title-attendance">Giờ vào</th>
+                                                <th class="title-attendance">Giờ về</th>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td>20-12-2022</td>
+                                                <td>8:13</td>
+                                                <td>17:46</td>
+                                            </tr>
+                                            <tr>
+                                                <td>19-12-2022</td>
+                                                <td>08:08</td>
+                                                <td>17:46</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16-12-2022</td>
+                                                <td>8:14</td>
+                                                <td>17:48</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15-12-2022</td>
+                                                <td>8:26</td>
+                                                <td>17:47</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="information__member">
+                        <div class="hr_notifications">
+                            <div class="hr_notification">
+                                <div class="hr_notification__head shared">NGHỈ PHÉP</div>
+                                <div class="hr_scroll-meet">
+                                    <table class="hr_table-bordered">  
+                                        <tbody>
+                                            <tr>
+                                                <th class="hr_title-attendance">Loại nghỉ</th>
+                                                <th class="hr_title-attendance">Đã dùng</th>
+                                                <th class="hr_title-attendance">Còn lại</th>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td>Nghỉ không lương</td>
+                                                <td>0</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nghỉ vì việc gia đình (Bố, mẹ, vợ, chồng mất)</td>
+                                                <td>0</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nghỉ cưới</td>
+                                                <td>0</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nghỉ bù OT</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr_notifications">
+                            <div class="notification__meethead">
+                                <div class="notification__head--meethead shared">LỊCH HỌP HÔM NAY</div>
+                                <div class="scroll-meet--meethead">
+                                    <div class="meethead-information">
+                                        <p class="meethead-text">
+                                            Bạn không có lịch họp hôm nay!
+                                        </p>
+                                        <p class="meethead-create">Ấn vào "+" để tạo lịch họp.</p>
+                                        <button class="meethead-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr_notifications">
+                            <div class="notification__birthday">
+                                <div class="notification__head--birthday shared">SINH NHẬT THÀNH VIÊN</div>
+                                <div class="scroll-meet--birthday">
+                                   <div>
+                                        <div class="scroll-meet--list">
+                                            <a href="/" class="scroll-img">
+                                                <img src="./assets/img/img.jpg" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <h2 class="text-color">Nguyễn Minh Hoàng</h2>
+                                                <p class="language">Reactjs</p>
+                                                <p class="scroll-birthday">9/5</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-meet--list">
+                                            <a href="/" class="scroll-img">
+                                                <img src="./assets/img/img.jpg" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <h2 class="text-color">Nguyễn Minh Hoàng</h2>
+                                                <p class="language">Reactjs</p>
+                                                <p class="scroll-birthday">9/5</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-meet--list">
+                                            <a href="/" class="scroll-img">
+                                                <img src="./assets/img/img.jpg" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <h2 class="text-color">Nguyễn Minh Hoàng</h2>
+                                                <p class="language">Reactjs</p>
+                                                <p class="scroll-birthday">9/5</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-meet--list">
+                                            <a href="/" class="scroll-img">
+                                                <img src="./assets/img/img.jpg" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <h2 class="text-color">Nguyễn Minh Hoàng</h2>
+                                                <p class="language">Reactjs</p>
+                                                <p class="scroll-birthday">9/5</p>
+                                            </div>
+                                        </div>
+                                        <div class="scroll-meet--list">
+                                            <a href="/" class="scroll-img">
+                                                <img src="./assets/img/img.jpg" alt="">
+                                            </a>
+                                            <div class="media-body">
+                                                <h2 class="text-color">Nguyễn Minh Hoàng</h2>
+                                                <p class="language">Reactjs</p>
+                                                <p class="scroll-birthday">9/5</p>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
